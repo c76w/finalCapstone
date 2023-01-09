@@ -1,0 +1,178 @@
+/* Body */
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+/* Headings */
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    text-transform: uppercase;
+    font-weight: 900;
+    color: indigo;
+    vertical-align: middle;
+}
+h1, .h1 {
+    font-size: 1.5rem;
+}
+/* Navigation */
+.navbar-toggler {
+    border: none;
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+nav .bi-list, nav .nav-link {
+    color: indigo;
+}
+nav .bi-list {
+    font-size: 2rem;
+}
+#mainNav .navbar-toggler-icon {
+    background-image: none;
+}
+/* Hero */
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bolder;
+}
+/* Top Sections */
+.top-section {
+    margin-top: 60px;
+}
+/* Footer */
+footer {
+    font-size: .9rem;
+}
+footer small {
+    font-style: italic;
+}
+footer ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+footer li a {
+    text-decoration: none;
+    color: indigo;
+}
+
+/* Cards */
+.card-footer {
+    background-color: #fff;
+}
+
+/* Forms */
+#contactForm textarea, #commentForm textarea {
+    min-height: 175px;
+}
+/* Form Button */
+.btn-indigo {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: indigo;
+    --bs-btn-border-color: rgb(61, 0, 104);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #333;
+    --bs-btn-hover-border-color: rgb(44, 44, 44);
+    --bs-btn-focus-shadow-rgb: none;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #333;
+    --bs-btn-active-border-color: rgb(44, 44, 44);
+    --bs-btn-active-shadow: none;
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #9e9e9e;
+    --bs-btn-disabled-border-color: #9a9a9a;
+}
+/* Home Page Blocks */
+.blocks {
+    background-color: indigo;
+}
+/* Home Page Golden Boot */
+.golden-boot-top h2 {
+    color: rgba(var(--bs-warning-rgb));
+    font-size: 4rem;
+    font-weight: bolder;
+}
+.golden-boot h3, .golden-boot .card-title {
+    color: var(--bs-card-color);
+    font-weight: bolder;
+}
+/* Groups */
+.groups .card, .savedItem .card {
+    overflow: hidden;
+}
+.groups small {
+    font-size: .7rem;
+}
+.group-name {
+    font-size: 1.4rem;
+}
+.groups img, .savedItem table img {
+    max-width: 38px;
+    margin-right: 6px;
+    margin-top: -3px;
+}
+.group-country div {
+    display: table-cell;
+}
+.group-item-total {
+    font-weight: bold;
+}
+.groups .table>thead, .groups .table tr, .savedItem .table>thead, .groups .table tr {
+    vertical-align: middle;
+}
+.groups .table th, .groups .table td, .savedItem  .table th, .savedItem .table td {
+    text-align: center;
+}
+th.group-name {
+    text-align: left;
+}
+.groups th, .groups tr, .savedItem th, .savedItem tr {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+/* Like & Save for Later buttons */
+.btn-round {
+    border-radius: 50%;
+    padding: 0;
+    min-width: 1.8rem;
+    min-height: 1.8rem;
+    font-size: 1rem;
+    margin-left: .3rem;
+}
+.btn-favourite {
+    border-color: #c80000;
+    color: #c80000;
+}
+.btn-img-container {
+    margin-top: -45px;
+    padding: var(--bs-card-cap-padding-y) var(--bs-card-cap-padding-x);
+}
+.btn-img-container .btn-round {
+    background-color: #fff;
+}
+.btn-favourite:hover,
+.btn-favourite:active,
+.btn-favourite:focus-visible,
+.btn-favourite:focus,
+.btn-img-container .btn-favourite:hover,
+.btn-img-container .btn-favourite:active,
+.btn-img-container .btn-favourite:focus-visible,
+.btn-img-container .btn-favourite:focus
+{
+    border-color: #c80000;
+    color: #fff;
+    background-color: #c80000;
+}
+.btn-liked,
+.btn-like:hover,
+.btn-img-container .btn-liked,
+.btn-img-container .btn-like:hover
+{
+    color: #fff!important;
+    background-color: #ffc107;
+}
+
+/* Saved For Later */
+.savedForLaterMessage {
+    text-align: center;
+    width: 100%;
+}

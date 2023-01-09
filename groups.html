@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groups | World Cup 2022</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/styles.css" type="text/css">
+</head>
+<body>
+    <!-- Header -->
+    <header></header>
+    <!-- End Header -->
+
+    <!-- Top Section -->
+    <section class="top-section container-xl my-3">
+        <div class="p-5 text-center">
+            <h1 class="h1 py-4 fs-1">Groups</h1>
+            <p class="fs-4">
+                Below are the groups, showing the winners of each groups along with some other stastics
+            </p>
+        </div>
+    </section>
+    <!-- End Top Section -->
+
+    <!-- Groups -->
+    <section class="py-5 groups">
+        <!-- First Row -->
+        <div class="row p-3 align-items-center justify-content-center g-3">
+            <div class="col-md-6 col-lg-4 p-2">
+                <div class="card">
+                    <div class="card-body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th class="group-name" colspan="3">Group A</th>
+                                    <th class="text-muted"><small>P</small></th>
+                                    <th class="text-muted"><small>W</small></th>
+                                    <th class="text-muted"><small>D</small></th>
+                                    <th class="text-muted"><small>L</small></th>
+                                    <th class="text-muted"><small>GD</small></th>
+                                    <th class="text-muted"><small>Pts</small></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="group-row align-middle">
+                                    <td>1</td>
+                                    <td colspan="2" class="group-country">
+                                        <div>
+                                            <img src="./assets/imgs/netherlands.png" alt="Netherlands Flag">
+                                        </div>
+                                        <div>NED</div>
+                                    </td>
+                                    <td>3</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>4</td>
+                                    <td class="group-item-total">7</td>
+                                </tr>
+                                <tr class="group-row">
+                                    <td>2</td>
+                                    <td colspan="2" class="group-country">
+                                        <div>
+                                            <img src="./assets/imgs/senegal.png" alt="Senegal Flag">
+                                        </div>
+                                        <div>SEN</div>
+                                    </td>
+                                    <td>3</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td class="group-item-total">6</td>
+                                </tr>
+                                <tr class="group-row">
+                                    <td>3</td>
+                                    <td colspan="2" class="group-country">
+                                        <div>
+                                            <img src="./assets/imgs/ecuador.png" alt="Ecuador Flag">
+                                        </div>
+                                        <div>ECU</div>
+                                    </td>
+                                    <td>3</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td class="group-item-total">4</td>
+                                </tr>
+                                <tr class="group-row">
+                                    <td>4</td>
+                                    <td colspan="2" class="group-country">
+                                        <div>
+                                            <img src="./assets/imgs/qatar.png" alt="Qatar Flag">
+                                        </div>
+                                        <div>QAT</div>
+                                    </td>
+                                    <td>3</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>3</td>
+                                    <td>-6</td>
+                                    <td class="group-item-total">0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="card-footer d-flex align-items-center justify-content-end likeSaveBtnContainer">
+                        <form>
+                            <button onclick="addLike(event)" id="groupsCard1Btn" type="button" class="btn btn-outline-warning btn-round btn-like" title="Like">
+                            <i class="bi bi-hand-thumbs-up-fill"></i>
+                            </button>
+                        </form>
+                        <button type="button" class="btn btn-outline-secondary btn-round btn-favourite" title="Save for Later">
+                          <i class="bi bi-bookmark-heart-fill"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 p-2">
+                <div class="card">
+                    <div class="card-body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th class="group-name" colspan="3">Group B</th>
+                                    <th class="text-muted"><small>P</small></th>
+                                    <th class="text-muted"><small>W</small></th>
+                                    <th class="text-muted"><small>D</small></th>
+                                    <th class="text-muted"><small>L</small></th>
+                                    <th class="text-muted"><small>GD</small></th>
+                                    <th class="text-muted"><small>Pts</small></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="group-row align-middle">
+                                    <td>1</td>
+                                    <td colspan="2" class="group-country">
+                                        <div>
+                                            <img src="./assets/imgs/england.png" alt="England Flag">
+                                        </div>
+                                        <div>ENG</div>
+                                    </td>
+                                    <td>3</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>7</td>
+                                    <td class="group-item-total">7</td>
+                                </tr>
+                                <tr class="group-row">
+                                    <td>2</td>
+                                    <td colspan="2" class="group-country">
+                                        <div>
+                                            <img src="./assets/imgs/united-states.png" alt="USA Flag">
+                                        </div>
+                                        <div>USA</div>
+                                    </td>
+                                    <td>3</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td class="group-item-total">5</td>
+                                </tr>
+                                <tr class="group-row">
+                                    <td>3</td>
+                                    <td colspan="2" class="group-country">
+                                        <div>
+                                            <img src="./assets/imgs/iran.png" alt="Iran Flag">
+                                        </div>
+                                        <div>IRN</div>
+                                    </td>
+                                    <td>3</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>2</td>
+                                    <td>-3</td>
+                                    <td class="group-item-total">3</td>
+                                </tr>
+                                <tr class="group-row">
+                                    <td>4</td>
+                                    <td colspan="2" class="group-country">
+                                        <div>
+                                            <img src="./assets/imgs/wales.png" alt="Wales Flag">
+                                        </div>
+                                        <div>WAL</div>
+                                    </td>
+                                    <td>3</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>-5</td>
+                                    <td class="group-item-total">1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="card-footer d-flex align-items-center justify-content-end likeSaveBtnContainer">
+                        <form>
+                            <button onclick="addLike(event)" id="groupsCard2Btn" type="button" class="btn btn-outline-warning btn-round btn-like" title="Like">
+                            <i class="bi bi-hand-thumbs-up-fill"></i>
+                            </button>
+                        </form>
+                        <button type="button" class="btn btn-outline-secondary btn-round btn-favourite" title="Save for Later">
+                          <i class="bi bi-bookmark-heart-fill"></i>
+                        </button>
+                    </div>
+                </div> 
+            </div>
+            <div class="col-md-6 col-lg-4 p-2">
+                <div class="card">
+                    <div class="card-body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th class="group-name" colspan="3">Group C</th>
+                                    <th class="text-muted"><small>P</small></th>
+                                    <th class="text-muted"><small>W</small></th>
+                                    <th class="text-muted"><small>D</small></th>
+                                    <th class="text-muted"><small>L</small></th>
+                                    <th class="text-muted"><small>GD</small></th>
+                                    <th class="text-muted"><small>Pts</small></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="group-row align-middle">
+                                    <td>1</td>
+                                    <td colspan="2" class="group-country">
+                                        <div>
+                                            <img src="./assets/imgs/argentina.png" alt="Argentina Flag">
+                                        </div>
+                                        <div>ARG</div>
+                                    </td>
+                                    <td>3</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>3</td>
+                                    <td class="group-item-total">6</td>
+                                </tr>
+                                <tr class="group-row">
+                                    <td>2</td>
+                                    <td colspan="2" class="group-country">
+                                        <div>
+                                            <img src="./assets/imgs/poland.png" alt="Poland Flag">
+                                        </div>
+                                        <div>POL</div>
+                                    </td>
+                                    <td>3</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td class="group-item-total">4</td>
+                                </tr>
+                                <tr class="group-row">
+                                    <td>3</td>
+                                    <td colspan="2" class="group-country">
+                                        <div>
+                                            <img src="./assets/imgs/mexico.png" alt="Mexico Flag">
+                                        </div>
+                                        <div>MEX</div>
+                                    </td>
+                                    <td>3</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>-1</td>
+                                    <td class="group-item-total">4</td>
+                                </tr>
+                                <tr class="group-row">
+                                    <td>4</td>
+                                    <td colspan="2" class="group-country">
+                                        <div>
+                                            <img src="./assets/imgs/saudi-arabia.png" alt="Saudi Arabia Flag">
+                                        </div>
+                                        <div>KSA</div>
+                                    </td>
+                                    <td>3</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>2</td>
+                                    <td>-2</td>
+                                    <td class="group-item-total">3</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="card-footer d-flex align-items-center justify-content-end likeSaveBtnContainer">
+                        <form>
+                            <button onclick="addLike(event)" id="groupsCard3Btn" type="button" class="btn btn-outline-warning btn-round btn-like" title="Like">
+                            <i class="bi bi-hand-thumbs-up-fill"></i>
+                            </button>
+                        </form>
+                        <button type="button" class="btn btn-outline-secondary btn-round btn-favourite" title="Save for Later">
+                          <i class="bi bi-bookmark-heart-fill"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End First Row -->
+
+        <!-- Second Row -->
+        <div class="row p-3 align-items-center justify-content-center g-3">
+            <div class="col-md-6 col-lg-4 p-2">
+                <div class="card">
+                    <div class="card-body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th class="group-name" colspan="3">Group D</th>
+                                    <th class="text-muted"><small>P</small></th>
+                                    <th class="text-muted"><small>W</small></th>
+                                    <th class="text-muted"><small>D</small></th>
+                                    <th class="text-muted"><small>L</small></th>
+                                    <th class="text-muted"><small>GD</small></th>
+                                    <th class="text-muted"><small>Pts</small></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="group-row align-middle">
+                                    <td>1</td>
+                                    <td colspan="2" class="group-country">
+                                        <div>
+                                            <img src="./assets/imgs/france.png" alt="France Flag">
+                                        </div>
+                                        <div>FRA</div>
+                                    </td>
+                                    <td>3</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>3</td>
+                                    <td class="group-item-total">6</td>
+                                </tr>
+                                <tr class="group-row">
+                                    <td>2</td>
+                                    <td colspan="2" class="group-country">
+                                        <div>
+                                            <img src="./assets/imgs/australia.png" alt="Australia Flag">
+                                        </div>
+                                        <div>AUS</div>
+                                    </td>
+                                    <td>3</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>-1</td>
+                                    <td class="group-item-total">6</td>
+                                </tr>
+                                <tr class="group-row">
+                                    <td>3</td>
+                                    <td colspan="2" class="group-country">
+                                        <div>
+                                            <img src="./assets/imgs/tunisia.png" alt="Tunisia Flag">
+                                        </div>
+                                        <div>TUN</div>
+                                    </td>
+                                    <td>3</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td class="group-item-total">4</td>
+                                </tr>
+                                <tr class="group-row">
+                                    <td>4</td>
+                                    <td colspan="2" class="group-country">
+                                        <div>
+                                            <img src="./assets/imgs/denmark.png" alt="Denmark Flag">
+                                        </div>
+                                        <div>DEN</div>
+                                    </td>
+                                    <td>3</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>-2</td>
+                                    <td class="group-item-total">1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="card-footer d-flex align-items-center justify-content-end likeSaveBtnContainer">
+                        <form>
+                            <button onclick="addLike(event)" id="groupsCard4Btn" type="button" class="btn btn-outline-warning btn-round btn-like" title="Like">
+                            <i class="bi bi-hand-thumbs-up-fill"></i>
+                            </button>
+                        </form>
+                        <button type="button" class="btn btn-outline-secondary btn-round btn-favourite" title="Save for Later">
+                          <i class="bi bi-bookmark-heart-fill"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 p-2">
+                <div class="card">
+                    <div class="card-body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th class="group-name" colspan="3">Group E</th>
+                                    <th class="text-muted"><small>P</small></th>
+                                    <th class="text-muted"><small>W</small></th>
+                                    <th class="text-muted"><small>D</small></th>
+                                    <th class="text-muted"><small>L</small></th>
+                                    <th class="text-muted"><small>GD</small></th>
+                                    <th class="text-muted"><small>Pts</small></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="group-row align-middle">
+                                    <td>1</td>
+                                    <td colspan="2" class="group-country">
+                                        <div>
+                                            <img src="./assets/imgs/japan.png" alt="Japan Flag">
+                                        </div>
+                                        <div>JPN</div>
+                                    </td>
+                                    <td>3</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td class="group-item-total">6</td>
+                                </tr>
+                                <tr class="group-row">
+                                    <td>2</td>
+                                    <td colspan="2" class="group-country">
+                                        <div>
+                                            <img src="./assets/imgs/spain.png" alt="Spain Flag">
+                                        </div>
+                                        <div>ESP</div>
+                                    </td>
+                                    <td>3</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>6</td>
+                                    <td class="group-item-total">4</td>
+                                </tr>
+                                <tr class="group-row">
+                                    <td>3</td>
+                                    <td colspan="2" class="group-country">
+                                        <div>
+                                            <img src="./assets/imgs/germany.png" alt="Germany Flag">
+                                        </div>
+                                        <div>GER</div>
+                                    </td>
+                                    <td>3</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td class="group-item-total">4</td>
+                                </tr>
+                                <tr class="group-row">
+                                    <td>4</td>
+                                    <td colspan="2" class="group-country">
+                                        <div>
+                                            <img src="./assets/imgs/costa-rica.png" alt="Costa Rica Flag">
+                                        </div>
+                                        <div>CRC</div>
+                                    </td>
+                                    <td>3</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>2</td>
+                                    <td>-8</td>
+                                    <td class="group-item-total">3</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="card-footer d-flex align-items-center justify-content-end likeSaveBtnContainer">
+                        <form>
+                            <button onclick="addLike(event)" id="groupsCard5Btn" type="button" class="btn btn-outline-warning btn-round btn-like" title="Like">
+                            <i class="bi bi-hand-thumbs-up-fill"></i>
+                            </button>
+                        </form>
+                        <button type="button" class="btn btn-outline-secondary btn-round btn-favourite" title="Save for Later">
+                          <i class="bi bi-bookmark-heart-fill"></i>
+                        </button>
+                    </div>
+                </div> 
+            </div>
+            <div class="col-md-6 col-lg-4 p-2">
+                <div class="card">
+                    <div class="card-body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th class="group-name" colspan="3">Group F</th>
+                                    <th class="text-muted"><small>P</small></th>
+                                    <th class="text-muted"><small>W</small></th>
+                                    <th class="text-muted"><small>D</small></th>
+                                    <th class="text-muted"><small>L</small></th>
+                                    <th class="text-muted"><small>GD</small></th>
+                                    <th class="text-muted"><small>Pts</small></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="group-row align-middle">
+                                    <td>1</td>
+                                    <td colspan="2" class="group-country">
+                                        <div>
+                                            <img src="./assets/imgs/morocco.png" alt="Morocco Flag">
+                                        </div>
+                                        <div>MAR</div>
+                                    </td>
+                                    <td>3</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>3</td>
+                                    <td class="group-item-total">7</td>
+                                </tr>
+                                <tr class="group-row">
+                                    <td>2</td>
+                                    <td colspan="2" class="group-country">
+                                        <div>
+                                            <img src="./assets/imgs/croatia.png" alt="Croatia Flag">
+                                        </div>
+                                        <div>CRO</div>
+                                    </td>
+                                    <td>3</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                    <td>3</td>
+                                    <td class="group-item-total">5</td>
+                                </tr>
+                                <tr class="group-row">
+                                    <td>3</td>
+                                    <td colspan="2" class="group-country">
+                                        <div>
+                                            <img src="./assets/imgs/belgium.png" alt="Belgium Flag">
+                                        </div>
+                                        <div>BEL</div>
+                                    </td>
+                                    <td>3</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>-1</td>
+                                    <td class="group-item-total">4</td>
+                                </tr>
+                                <tr class="group-row">
+                                    <td>4</td>
+                                    <td colspan="2" class="group-country">
+                                        <div>
+                                            <img src="./assets/imgs/canada.png" alt="Canada Flag">
+                                        </div>
+                                        <div>CAN</div>
+                                    </td>
+                                    <td>3</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>3</td>
+                                    <td>-5</td>
+                                    <td class="group-item-total">0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="card-footer d-flex align-items-center justify-content-end likeSaveBtnContainer">
+                        <form>
+                            <button onclick="addLike(event)" id="groupsCard6Btn" type="button" class="btn btn-outline-warning btn-round btn-like" title="Like">
+                            <i class="bi bi-hand-thumbs-up-fill"></i>
+                            </button>
+                        </form>
+                        <button type="button" class="btn btn-outline-secondary btn-round btn-favourite" title="Save for Later">
+                          <i class="bi bi-bookmark-heart-fill"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Second Row -->
+
+        <!-- Third Row -->
+        <div class="row p-3 align-items-center justify-content-center g-3">
+            <div class="col-md-6 col-lg-4 p-2">
+                <div class="card">
+                    <div class="card-body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th class="group-name" colspan="3">Group G</th>
+                                    <th class="text-muted"><small>P</small></th>
+                                    <th class="text-muted"><small>W</small></th>
+                                    <th class="text-muted"><small>D</small></th>
+                                    <th class="text-muted"><small>L</small></th>
+                                    <th class="text-muted"><small>GD</small></th>
+                                    <th class="text-muted"><small>Pts</small></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="group-row align-middle">
+                                    <td>1</td>
+                                    <td colspan="2" class="group-country">
+                                        <div>
+                                            <img src="./assets/imgs/brazil.png" alt="Brazil Flag">
+                                        </div>
+                                        <div>BRA</div>
+                                    </td>
+                                    <td>3</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td class="group-item-total">6</td>
+                                </tr>
+                                <tr class="group-row">
+                                    <td>2</td>
+                                    <td colspan="2" class="group-country">
+                                        <div>
+                                            <img src="./assets/imgs/switzerland.png" alt="Switzerland Flag">
+                                        </div>
+                                        <div>SUI</div>
+                                    </td>
+                                    <td>3</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td class="group-item-total">6</td>
+                                </tr>
+                                <tr class="group-row">
+                                    <td>3</td>
+                                    <td colspan="2" class="group-country">
+                                        <div>
+                                            <img src="./assets/imgs/cameroon.png" alt="Cameroon Flag">
+                                        </div>
+                                        <div>CMR</div>
+                                    </td>
+                                    <td>3</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td class="group-item-total">4</td>
+                                </tr>
+                                <tr class="group-row">
+                                    <td>4</td>
+                                    <td colspan="2" class="group-country">
+                                        <div>
+                                            <img src="./assets/imgs/serbia.png" alt="Serbia Flag">
+                                        </div>
+                                        <div>SRB</div>
+                                    </td>
+                                    <td>3</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>-3</td>
+                                    <td class="group-item-total">1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="card-footer d-flex align-items-center justify-content-end likeSaveBtnContainer">
+                        <form>
+                            <button onclick="addLike(event)" id="groupsCard7Btn" type="button" class="btn btn-outline-warning btn-round btn-like" title="Like">
+                            <i class="bi bi-hand-thumbs-up-fill"></i>
+                            </button>
+                        </form>
+                        <button type="button" class="btn btn-outline-secondary btn-round btn-favourite" title="Save for Later">
+                          <i class="bi bi-bookmark-heart-fill"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 p-2">
+                <div class="card">
+                    <div class="card-body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th class="group-name" colspan="3">Group H</th>
+                                    <th class="text-muted"><small>P</small></th>
+                                    <th class="text-muted"><small>W</small></th>
+                                    <th class="text-muted"><small>D</small></th>
+                                    <th class="text-muted"><small>L</small></th>
+                                    <th class="text-muted"><small>GD</small></th>
+                                    <th class="text-muted"><small>Pts</small></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="group-row align-middle">
+                                    <td>1</td>
+                                    <td colspan="2" class="group-country">
+                                        <div>
+                                            <img src="./assets/imgs/portugal.png" alt="Portugal Flag">
+                                        </div>
+                                        <div>POR</div>
+                                    </td>
+                                    <td>3</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td class="group-item-total">6</td>
+                                </tr>
+                                <tr class="group-row">
+                                    <td>2</td>
+                                    <td colspan="2" class="group-country">
+                                        <div>
+                                            <img src="./assets/imgs/korea-republic.png" alt="Korea Republic Flag">
+                                        </div>
+                                        <div>KOR</div>
+                                    </td>
+                                    <td>3</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td class="group-item-total">4</td>
+                                </tr>
+                                <tr class="group-row">
+                                    <td>3</td>
+                                    <td colspan="2" class="group-country">
+                                        <div>
+                                            <img src="./assets/imgs/uruguay.png" alt="Uruguay Flag">
+                                        </div>
+                                        <div>URU</div>
+                                    </td>
+                                    <td>3</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td class="group-item-total">4</td>
+                                </tr>
+                                <tr class="group-row">
+                                    <td>4</td>
+                                    <td colspan="2" class="group-country">
+                                        <div>
+                                            <img src="./assets/imgs/ghana.png" alt="GHana Flag">
+                                        </div>
+                                        <div>GHA</div>
+                                    </td>
+                                    <td>3</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>2</td>
+                                    <td>-2</td>
+                                    <td class="group-item-total">3</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="card-footer d-flex align-items-center justify-content-end likeSaveBtnContainer">
+                        <form>
+                            <button onclick="addLike(event)" id="groupsCard8Btn" type="button" class="btn btn-outline-warning btn-round btn-like" title="Like">
+                            <i class="bi bi-hand-thumbs-up-fill"></i>
+                            </button>
+                        </form>
+                        <button type="button" class="btn btn-outline-secondary btn-round btn-favourite" title="Save for Later">
+                          <i class="bi bi-bookmark-heart-fill"></i>
+                        </button>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <!-- End Third Row -->
+    </section>
+    <!-- End Groups -->
+
+
+    <!-- Footer -->
+    <footer></footer>
+    <!-- End Footer -->
+    
+    <!-- Bootstrap Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Custom Scripts -->
+    <script src="./assets/scripts/scripts.js"></script>
+</body>
+</html>
